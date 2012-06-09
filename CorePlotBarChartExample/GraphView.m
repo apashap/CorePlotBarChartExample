@@ -24,7 +24,7 @@
             [UIColor redColor], @"Plot 2",
             [UIColor greenColor], @"Plot 3", nil];
 
-    //Generate random data for two sets of data that will be displayed for each day
+    //Generate random data for each set of data that will be displayed for each day
     //Numbers between 1 and 10
     for (NSString *date in dates) {
         NSMutableDictionary *dict = [NSMutableDictionary dictionary];

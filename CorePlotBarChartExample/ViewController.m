@@ -14,6 +14,15 @@
 
 @implementation ViewController
 
+@synthesize graphView;
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.graphView createGraph];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +33,7 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    self.graphView = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
